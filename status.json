@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-16T15:53:49.928Z",
+  "checkedAt": "2026-10-16T15:54:09.313Z",
   "overall": "degraded",
   "apps": [
     {
@@ -7,63 +7,63 @@
       "name": "TechToolYard",
       "state": "up",
       "fails": 0,
-      "since": "2026-10-16T15:53:49.928Z"
+      "since": "2026-10-16T15:54:09.313Z"
     },
     {
       "key": "renevo",
       "name": "Renevo",
       "state": "up",
       "fails": 0,
-      "since": "2026-10-16T15:53:49.928Z"
+      "since": "2026-10-16T15:54:09.313Z"
     },
     {
       "key": "domainvera",
       "name": "Domainvera",
       "state": "up",
       "fails": 0,
-      "since": "2026-10-16T15:53:49.928Z"
+      "since": "2026-10-16T15:54:09.313Z"
     },
     {
       "key": "steadivo",
       "name": "Steadivo",
       "state": "up",
       "fails": 0,
-      "since": "2026-10-16T15:53:49.928Z"
+      "since": "2026-10-16T15:54:09.313Z"
     },
     {
       "key": "scanmetry",
       "name": "Scanmetry",
       "state": "up",
       "fails": 0,
-      "since": "2026-10-16T15:53:49.928Z"
+      "since": "2026-10-16T15:54:09.313Z"
     },
     {
       "key": "duepath",
       "name": "Duepath",
       "state": "up",
       "fails": 0,
-      "since": "2026-10-16T15:53:49.928Z"
+      "since": "2026-10-16T15:54:09.313Z"
     },
     {
       "key": "readinex",
       "name": "Readinex",
       "state": "up",
       "fails": 0,
-      "since": "2026-10-16T15:53:49.928Z"
+      "since": "2026-10-16T15:54:09.313Z"
     },
     {
       "key": "ariavue",
       "name": "Ariavue",
       "state": "up",
       "fails": 0,
-      "since": "2026-10-16T15:53:49.928Z"
+      "since": "2026-10-16T15:54:09.313Z"
     },
     {
       "key": "licenscope",
       "name": "Licenscope",
       "state": "up",
       "fails": 0,
-      "since": "2026-10-16T15:53:49.928Z"
+      "since": "2026-10-16T15:54:09.313Z"
     }
   ],
   "providers": [
@@ -73,7 +73,7 @@
       "page": "https://www.cloudflarestatus.com/",
       "state": "major",
       "text": "Partial System Outage",
-      "since": "2026-10-16T15:53:49.928Z"
+      "since": "2026-10-16T15:54:09.313Z"
     },
     {
       "key": "stripe",
@@ -81,7 +81,7 @@
       "page": "https://status.stripe.com/",
       "state": "none",
       "text": "All services are online.",
-      "since": "2026-10-16T15:53:49.928Z"
+      "since": "2026-10-16T15:54:09.313Z"
     }
   ],
   "notesHtml": ""
