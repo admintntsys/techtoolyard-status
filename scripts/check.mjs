@@ -49,8 +49,9 @@ export function parseCloudflare(r) {
     const j = JSON.parse(r.body);
     const ind = j.status?.indicator;
     const text = String(j.status?.description ?? "").slice(0, 200);
-    if (ind === "none") return { state: "none", text };
-    if (ind === "minor" || ind === "maintenance") return { state: "minor", text };
+    // "maintenance" is scheduled work, not degradation: no banner.
+    if (ind === "none" || ind === "maintenance") return { state: "none", text };
+    if (ind === "minor") return { state: "minor", text };
     if (ind === "major" || ind === "critical") return { state: "major", text };
   } catch {}
   return { state: "unknown", text: "" };

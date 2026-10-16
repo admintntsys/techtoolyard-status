@@ -19,6 +19,7 @@ test("classify", () => {
 test("provider parsing", () => {
   assert.equal(parseCloudflare({ body: '{"status":{"indicator":"none","description":"All Systems Operational"}}' }).state, "none");
   assert.equal(parseCloudflare({ body: '{"status":{"indicator":"major","description":"x"}}' }).state, "major");
+  assert.equal(parseCloudflare({ body: '{"status":{"indicator":"maintenance","description":"m"}}' }).state, "none");
   assert.equal(parseCloudflare({ body: "<html>" }).state, "unknown");
   assert.equal(parseStripe({ body: '{"largestatus":"up","message":"All services are online."}' }).state, "none");
   assert.equal(parseStripe({ body: '{"largestatus":"degraded"}' }).state, "minor");
