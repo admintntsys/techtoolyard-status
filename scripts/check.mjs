@@ -18,7 +18,7 @@ async function timedFetch(url) {
   const t = setTimeout(() => ctl.abort(), TIMEOUT_MS);
   const start = Date.now();
   try {
-    const res = await fetch(url, { signal: ctl.signal, redirect: "follow", headers: { "user-agent": "techtoolyard-status (+https://github.com/admintntsys/techtoolyard-status)" } });
+    const res = await fetch(url, { signal: ctl.signal, redirect: "follow", headers: { "user-agent": "techtoolyard-status-checker" } });
     const body = await res.text();
     return { ok: res.ok, status: res.status, ms: Date.now() - start, body };
   } catch {
