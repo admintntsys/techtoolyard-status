@@ -1,0 +1,33 @@
+name: Status check
+on:
+  schedule:
+    - cron: "*/5 * * * *" # GitHub's minimum; runs can be delayed under load
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [INCIDENTS.md, config.json, scripts/**]
+permissions:
+  contents: write
+concurrency:
+  group: status-check
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node --test test/
+      - run: node scripts/check.mjs
+      - name: Commit status
+        run: |
+          git config user.name "admintntsys"
+          git config user.email "admintntsys@users.noreply.github.com"
+          git add status.json history.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "No change"; exit 0; fi
+          git commit -m "status: $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase -X theirs || true
+          git push

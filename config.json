@@ -1,0 +1,72 @@
+{
+  "apps": [
+    {
+      "key": "techtoolyard",
+      "name": "TechToolYard",
+      "url": "https://techtoolyard.com/",
+      "accent": "#F97316"
+    },
+    {
+      "key": "renevo",
+      "name": "Renevo",
+      "url": "https://renevo.techtoolyard.com/api/health",
+      "accent": "#0B4F6C"
+    },
+    {
+      "key": "domainvera",
+      "name": "Domainvera",
+      "url": "https://domainvera.techtoolyard.com/api/health",
+      "accent": "#5B2A86"
+    },
+    {
+      "key": "steadivo",
+      "name": "Steadivo",
+      "url": "https://steadivo.techtoolyard.com/api/health",
+      "accent": "#3730A3"
+    },
+    {
+      "key": "scanmetry",
+      "name": "Scanmetry",
+      "url": "https://scanmetry.techtoolyard.com/api/health",
+      "accent": "#3F6212"
+    },
+    {
+      "key": "duepath",
+      "name": "Duepath",
+      "url": "https://duepath.techtoolyard.com/api/health",
+      "accent": "#78350F"
+    },
+    {
+      "key": "readinex",
+      "name": "Readinex",
+      "url": "https://readinex.techtoolyard.com/api/health",
+      "accent": "#831843"
+    },
+    {
+      "key": "ariavue",
+      "name": "Ariavue",
+      "url": "https://ariavue.techtoolyard.com/api/health",
+      "accent": "#9A3412"
+    },
+    {
+      "key": "licenscope",
+      "name": "Licenscope",
+      "url": "https://licenscope.techtoolyard.com/api/health",
+      "accent": "#1E3A5F"
+    }
+  ],
+  "providers": [
+    {
+      "key": "cloudflare",
+      "name": "Cloudflare",
+      "api": "https://www.cloudflarestatus.com/api/v2/status.json",
+      "page": "https://www.cloudflarestatus.com/"
+    },
+    {
+      "key": "stripe",
+      "name": "Stripe",
+      "api": "https://status.stripe.com/current",
+      "page": "https://status.stripe.com/"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechToolYard status</title>
+<meta name="description" content="Current status of the TechToolYard apps and the providers they use.">
+<link rel="icon" href="assets/logo-ty.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap nav-in">
+  <a class="brand" href="https://techtoolyard.com"><img src="assets/logo-ty.svg" alt="" width="32" height="32">TechToolYard<span class="tm">™</span> status</a>
+</div></header>
+<main id="main" class="wrap" tabindex="-1">
+  <section class="hero">
+    <h1 id="overall-title">Checking status…</h1>
+    <p class="muted" id="checked">Loading the latest check.</p>
+  </section>
+  <section aria-labelledby="apps-h"><h2 id="apps-h">Apps</h2><ul class="grid" id="apps"></ul></section>
+  <section aria-labelledby="prov-h"><h2 id="prov-h">Providers we use</h2>
+    <p class="muted">What each provider says on its own status page.</p>
+    <ul class="grid" id="providers"></ul></section>
+  <section aria-labelledby="notes-h"><h2 id="notes-h">Notes from our team</h2><div class="notes" id="notes"><p class="muted">No notes right now.</p></div></section>
+  <section aria-labelledby="hist-h"><h2 id="hist-h">Recent changes</h2><ol class="history" id="history"></ol></section>
+  <noscript><p>This page needs JavaScript to show live status. The raw data is in <a href="status.json">status.json</a>.</p></noscript>
+</main>
+<footer class="foot"><div class="wrap">
+  <p>Checked automatically about every 5 minutes from outside our hosting. This page reports what the checks see; it is not a promise of availability.</p>
+  <p><a href="https://techtoolyard.com">All apps</a> · <a href="status.json">status.json</a> · <a href="https://github.com/admintntsys/techtoolyard-status">Source</a></p>
+</div></footer>
+<script src="app.js" defer></script>
+</body>
+</html>

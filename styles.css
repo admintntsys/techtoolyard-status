@@ -1,0 +1,30 @@
+/* Matches techtoolyard.com landing v2: dark #0B1120, system font stack, per-app accents. */
+:root{--ink:#0B1120;--ink-2:#111A2E;--slate:#1E293B;--on-dark:#F8FAFC;--on-dark-muted:#CBD5E1;
+--ok:#4ADE80;--warn:#FBBF24;--bad:#F87171;--focus:#FBBF24;--r-md:14px;
+--font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--font);font-size:1.0625rem;line-height:1.6;background:var(--ink);color:var(--on-dark);-webkit-font-smoothing:antialiased}
+a{color:#7DD3FC}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:16px;top:-60px;background:var(--focus);color:var(--ink);padding:8px 16px;border-radius:8px;font-weight:700}
+.skip:focus{top:16px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.nav{position:sticky;top:0;background:rgba(11,17,32,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);z-index:5}
+.nav-in{display:flex;align-items:center;height:64px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.125rem;color:var(--on-dark);text-decoration:none}
+.tm{font-size:.55em;vertical-align:super;font-weight:600;margin-left:1px;margin-right:4px}
+.hero{padding:56px 0 24px}
+h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 8px;font-weight:800}
+body[data-overall=up] h1{color:var(--ok)}body[data-overall=degraded] h1{color:var(--warn)}body[data-overall=down] h1{color:var(--bad)}
+h2{font-size:1.5rem;margin:40px 0 12px;letter-spacing:-.01em}
+h3{margin:0 0 6px;font-size:1.125rem}
+.muted{color:var(--on-dark-muted)}.small{font-size:.9375rem;margin:4px 0 0}
+.grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card{background:var(--ink-2);border:1px solid rgba(255,255,255,.08);border-left:6px solid var(--accent,#38BDF8);border-radius:var(--r-md);padding:16px 18px}
+.pill{display:inline-block;margin:0;padding:2px 10px;border-radius:999px;font-weight:700;font-size:.875rem;background:rgba(74,222,128,.14);color:var(--ok)}
+.state-slow .pill,.prov-minor .pill,.prov-unknown .pill{background:rgba(251,191,36,.14);color:var(--warn)}
+.state-down .pill,.prov-major .pill{background:rgba(248,113,113,.16);color:var(--bad)}
+.card a{display:inline-block;margin-top:8px}
+.notes{background:var(--ink-2);border-radius:var(--r-md);padding:4px 20px;border:1px solid rgba(255,255,255,.08)}
+.history{padding-left:20px;color:var(--on-dark-muted)}
+.foot{margin-top:56px;border-top:1px solid rgba(255,255,255,.08);padding:24px 0;color:var(--on-dark-muted);font-size:.9375rem}
