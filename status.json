@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-10-16T15:53:49.928Z",
+  "overall": "degraded",
+  "apps": [
+    {
+      "key": "techtoolyard",
+      "name": "TechToolYard",
+      "state": "up",
+      "fails": 0,
+      "since": "2026-10-16T15:53:49.928Z"
+    },
+    {
+      "key": "renevo",
+      "name": "Renevo",
+      "state": "up",
+      "fails": 0,
+      "since": "2026-10-16T15:53:49.928Z"
+    },
+    {
+      "key": "domainvera",
+      "name": "Domainvera",
+      "state": "up",
+      "fails": 0,
+      "since": "2026-10-16T15:53:49.928Z"
+    },
+    {
+      "key": "steadivo",
+      "name": "Steadivo",
+      "state": "up",
+      "fails": 0,
+      "since": "2026-10-16T15:53:49.928Z"
+    },
+    {
+      "key": "scanmetry",
+      "name": "Scanmetry",
+      "state": "up",
+      "fails": 0,
+      "since": "2026-10-16T15:53:49.928Z"
+    },
+    {
+      "key": "duepath",
+      "name": "Duepath",
+      "state": "up",
+      "fails": 0,
+      "since": "2026-10-16T15:53:49.928Z"
+    },
+    {
+      "key": "readinex",
+      "name": "Readinex",
+      "state": "up",
+      "fails": 0,
+      "since": "2026-10-16T15:53:49.928Z"
+    },
+    {
+      "key": "ariavue",
+      "name": "Ariavue",
+      "state": "up",
+      "fails": 0,
+      "since": "2026-10-16T15:53:49.928Z"
+    },
+    {
+      "key": "licenscope",
+      "name": "Licenscope",
+      "state": "up",
+      "fails": 0,
+      "since": "2026-10-16T15:53:49.928Z"
+    }
+  ],
+  "providers": [
+    {
+      "key": "cloudflare",
+      "name": "Cloudflare",
+      "page": "https://www.cloudflarestatus.com/",
+      "state": "major",
+      "text": "Partial System Outage",
+      "since": "2026-10-16T15:53:49.928Z"
+    },
+    {
+      "key": "stripe",
+      "name": "Stripe",
+      "page": "https://status.stripe.com/",
+      "state": "none",
+      "text": "All services are online.",
+      "since": "2026-10-16T15:53:49.928Z"
+    }
+  ],
+  "notesHtml": ""
+}
