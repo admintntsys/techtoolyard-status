@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-25T09:05:48.247Z",
+  "checkedAt": "2026-11-25T19:11:55.144Z",
   "overall": "degraded",
   "apps": [
     {
@@ -71,9 +71,9 @@
       "key": "cloudflare",
       "name": "Cloudflare",
       "page": "https://www.cloudflarestatus.com/",
-      "state": "major",
-      "text": "Partial System Outage",
-      "since": "2026-11-25T09:05:48.247Z"
+      "state": "minor",
+      "text": "Partially Degraded Service",
+      "since": "2026-11-25T19:11:55.144Z"
     },
     {
       "key": "stripe",
